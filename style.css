@@ -11,13 +11,12 @@ html {
 html,
 body {
 	width: 100%;
-	height: 100%;
+	height: 125%;
 	margin: 0;
 	padding: 0;
-}
-
-body {
-	background: #ffffff;
+	background-image:url(https://thumbs.gfycat.com/HugeVengefulAmericanbittern-max-1mb.gif); 
+    background-repeat:repeat;
+    background-size:cover;
 	font-family: 'Permanent Marker', cursive;
 	font-size: 16px;
 }
@@ -31,7 +30,9 @@ body {
 
 h1 {
 	font-family: 'Gloria Hallelujah', cursive;
+    color: yellow;
 }
+
 
 
 /*
@@ -40,7 +41,8 @@ h1 {
 
 
 .deck {
-	width: 85%;
+	width: 50%;
+    height: 50%;
 	background: #716F71;
 	padding: 1rem;
 	border-radius: 4px;
@@ -56,7 +58,8 @@ h1 {
 	height: 3.7rem;
 	width: 3.7rem;
 	margin: 0.2rem 0.2rem;
-	background: #141214;;
+	background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmSMzIk0M8z0arc4utSqEXIKb180eN9zklT1PgVjQKS2D4SeyR);
+    background-size:50%;
 	font-size: 0;
 	color: #ffffff;
 	border-radius: 5px;
@@ -83,7 +86,6 @@ h1 {
 
 .deck .card.match {
 	cursor: default;
-	background: #E5F720;
 	font-size: 33px;
 	animation-name: rubberBand;
 	-webkit-backface-visibility: visible !important;
@@ -132,7 +134,7 @@ h1 {
 	cursor: pointer;
 }
 
-.fa-star {
+.fa-repeat {
 	color: #FFD700;
 }
 

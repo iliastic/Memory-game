@@ -11,80 +11,82 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<!--whole game is in this container -->
     <div class="container">
         <header>
             <h1>Memory Game</h1>
         </header>
-
+<!--stars repressent the score (used bootstrap for these )-->
         <section class="score-panel">
         	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
+        		<li><img src="https://img.icons8.com/color/48/000000/star-pokemon.png"></li>
+        		<li><img src="https://img.icons8.com/color/48/000000/star-pokemon.png"></li>
+        		<li><img src="https://img.icons8.com/color/48/000000/star-pokemon.png"></li>
         	</ul>
-
+<!-- here it shows how many moves you made for completing the game-->
         	<span class="moves">0</span> Move(s)
-
+<!--keeps track of how long you needed to finish the game  -->
             <div class="timer">
             </div>
-
+<!-- restart button (onclick) will start or restart game-->
             <div class="restart" onclick=startGame()>
         		<i class="fa fa-repeat"></i>
         	</div>
         </section>
-
+<!--The card's them self with symbols inserted (double)Card deck or deck means all the cards -->
         <ul class="deck" id="card-deck">
-            <li class="card" type="diamond">
-                <i class="fa fa-diamond"></i>
+
+            <li class="card" type="venomoth">
+                <img src= 'https://d1rw89lz12ur5s.cloudfront.net/photo/collectorscache/file/754445/Venomoth%20error.jpg?1504558474' id='venomoth'/>
             </li>
-            <li class="card" type="plane">
-                <i class="fa fa-paper-plane-o"></i>
+            <li class="card" type="houndoor">
+                <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/148453.jpg' id= 'houndoor'/>
+            </li>
+            <li class="card match" type="gengar">
+                <img src='https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/149061_200w.jpg' id='gengar'/>
+            </li>
+            <li class="card" type="dugtrio" >
+                <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/149804.jpg' id='dugtrio'/>
+            </li>
+            <li class="card" type="charizard">
+                <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/1067873.jpg' id='charizard'/>
             </li>
             <li class="card match" type="anchor">
-                <i class="fa fa-anchor"></i>
+            <img src='https://6d4be195623157e28848-7697ece4918e0a73861de0eb37d08968.ssl.cf1.rackcdn.com/149061_200w.jpg' id='gengar'/>
             </li>
-            <li class="card" type="bolt" >
-                <i class="fa fa-bolt"></i>
+            <li class="card" type="blastoise">
+                <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/148871.jpg' id='blastoise'/>
             </li>
-            <li class="card" type="cube">
-                <i class="fa fa-cube"></i>
+            <li class="card" type="venusaur">
+            <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/183624.jpg' id='venusaur'/>
             </li>
-            <li class="card match" type="anchor">
-                <i class="fa fa-anchor"></i>
+            <li class="card" type="venomoth">
+                <img src= 'https://d1rw89lz12ur5s.cloudfront.net/photo/collectorscache/file/754445/Venomoth%20error.jpg?1504558474' id='venomoth'/>
             </li>
-            <li class="card" type="leaf">
-                <i class="fa fa-leaf"></i>
+            <li class="card" type="mewtwo">
+                <img src= 'https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/149258.jpg' id='venomoth'/>
             </li>
-            <li class="card" type="bicycle">
-                <i class="fa fa-bicycle"></i>
+            <li class="card" type="blastoise">
+                <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/148871.jpg' id='blastoise'/>
             </li>
-            <li class="card" type="diamond">
-                <i class="fa fa-diamond"></i>
+            <li class="card" type="mewtwo">
+                <img src= 'https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/149258.jpg' id='venomoth'/>
             </li>
-            <li class="card" type="bomb">
-                <i class="fa fa-bomb"></i>
+            <li class="card" type="dugtrio" >
+                <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/149804.jpg' id='dugtrio'/>
             </li>
-            <li class="card" type="leaf">
-                <i class="fa fa-leaf"></i>
+            <li class="card" type="venusaur">
+            <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/183624.jpg' id='venusaur'/>
             </li>
-            <li class="card" type="bomb">
-                <i class="fa fa-bomb"></i>
+            <li class="card" type="houndoor">
+                <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/148453.jpg' id= 'houndoor'/>
             </li>
-            <li class="card open show" type="bolt">
-                <i class="fa fa-bolt"></i>
-            </li>
-            <li class="card" type="bicycle">
-                <i class="fa fa-bicycle"></i>
-            </li>
-            <li class="card" type="plane">
-                <i class="fa fa-paper-plane-o"></i>
-            </li>
-            <li class="card" type="cube">
-                <i class="fa fa-cube"></i>
+            <li class="card" type="charizard">
+                <img src='https://52f4e29a8321344e30ae-0f55c9129972ac85d6b1f4e703468e6b.ssl.cf2.rackcdn.com/products/pictures/1067873.jpg' id='charizard'/>
             </li>
         </ul>
 
+<!-- This will popup when you finish the will overlay the complete page-->
         <div id="popup1" class="overlay">
             <div class="popup">
                 <h2>Congratulations 🎉</h2>
@@ -92,11 +94,13 @@
                 <div class="content-1">
                     Congratulations you're a winner 🎉🎉
                 </div>
+            <!--This will show your results in the pop up  -->
                 <div class="content-2">
                     <p>You made <span id=finalMove> </span> moves </p>
                     <p>in <span id=totalTime> </span> </p>
                     <p>Rating:  <span id=starRating></span></p>
                 </div>
+            <!--let's you restart the game -->
                 <button id="play-again"onclick="playAgain()">
                     Play again 😄</a>
                 </button>
