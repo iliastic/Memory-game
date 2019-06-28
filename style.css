@@ -35,6 +35,11 @@ h1 {
 
 
 
+.moves {
+	font-family: 'Gloria Hallelujah', cursive;
+    color: yellow;
+}
+
 /*
  * Styles for the deck of cards
  */
@@ -71,7 +76,7 @@ h1 {
 }
 
 .deck .card.open {
-	transform: rotateY(0);
+	transform: rotateY(180deg);
 	cursor: default;
 	animation-name: flipInY;
 	-webkit-backface-visibility: visible !important;
@@ -90,6 +95,7 @@ h1 {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: .75s;
+	background: greenyellow;
 }
 
 .deck .card.unmatched {
